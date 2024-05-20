@@ -1,0 +1,56 @@
+.row {
+    margin-left: 10px;
+    color: #fff;
+    position: relative;
+  }
+  
+  .row h2 {
+    margin-left: 10px;
+  }
+  
+  .row__container {
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow-x: hidden; 
+    scroll-behavior: smooth; 
+  }
+  
+  .row__poster {
+    flex: 0 0 auto;
+    width: calc(10% - 10px); 
+    max-height: 200px;
+    object-fit: contain;
+    margin-right: 10px;
+    transition: transform 450ms;
+  }
+  
+  .row__poster:hover {
+    transform: scale(1.08);
+    opacity: 1;
+  }
+  
+  .row__arrows {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+  
+  .row__arrow {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+    transition: background-color 0.2s ease;
+  }
+  
+  .row__arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
